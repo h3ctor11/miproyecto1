@@ -37,6 +37,9 @@ main {
     margin: auto;
 }
 
+img{
+    border-radius: 50%;
+}
 /* Recomendaciones! 
 *  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
 *    "estilos generales". Una buena idea sería comenzar por el <body> ;)
