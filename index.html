@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,17 +10,57 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    <header>
-        <img src="./img/logo hb1.jpg" alt="">
-        <nav>
-            <a href="#inicio">Héctor</a> 
-            <a href="#contacto">Contacto</a>
-        </nav>    
-    </header>
 
+<body>
     <!-- La estructura básica y la vinculación con CSS estan listas. A codear! 💪  -->
     <!-- En este archivo escriban su HTML -->
+    <header class="header">
+        <div class="logo">
+            <img src="./img/logo hb1.jpg" alt="logo personal"> 
+        </div>
+        <nav class="nav-lista">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li> <a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <section id="Inicio" class="sec1">
+            <img src="./img/pp.jpg" alt="foto de héctor">
+
+            <h2>Hola! Soy Héctor</h2>
+
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, suscipit sint assumenda magnam placeat
+                velit quam iste, aperiam mollitia blanditiis, veniam non? Quo, ab eaque ea temporibus tempore
+                accusantium aliquid pariatur repellat sint id doloremque veritatis illo facere quae accusamus doloribus?
+                Perspiciatis sunt aliquam fugiat. Explicabo, quasi omnis.
+            </p>
+
+            <a href="./img/HÉCTOR BETANCOURT (2).pdf" class="btn btn1">Descargar cv</a>
+        </section>
+
+        <section id="Contacto" class="sec2">
+            <h2>Hablemos!</h2>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis consequatur numquam, soluta natus cum
+                ut asperiores repellat exercitationem sint officia molestias quibusdam fugit esse recusandae magnam
+                nulla est fuga non!
+            </p>
+            <ul>
+                <li><img src="./img/mail.png" alt="email"></li>
+                <li><img src="./img/github.png" alt="github"></li>
+                <li><img src="./img/linkedin.png" alt="linkedin"></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Código latam creado por héctor, suerte y gaceta hípica</p>
+    </footer>
 </body>
+
 </html>

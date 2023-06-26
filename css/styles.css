@@ -10,24 +10,75 @@
 */
 
 /* Reset */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     /* Para que el scrolleo en la one page sea suave */
     scroll-behavior: smooth;
+   
+    
+}
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    background-color: #fbfbfb;
+    }
+
+.header{
+    background-color: #fbfbfb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 2px 5%;
+    top: 0;
+
+}
+.header .logo{
+    cursor: pointer;
 }
 
-/* Para quitar los puntos a los items de listas */
-ul {
+.header .logo img{
+    border-radius: 50px;
+    height: 85px;
+    width: 85px;
+    transition: all 0.3s;
+}
+.header .logo :hover{
+    transform: scale(1.2); 
+}
+
+.header .nav-lista{
     list-style: none;
 }
 
+.header .nav-lista li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.header .nav-lista a{
+    text-decoration: none;
+    font-size: 0.7rem;
+    color: #0f0f0f;
+}
+
+.header .nav-lista li:hover{
+    transform: scale(1.1);
+}
+
+.header .nav-lista li a:hover{
+    color: #FFA000;
+}
+
 /* Para que los enlaces hereden el color de texto y no tengan subrayado */
-a {
+/*a {
     text-decoration: none;
     color: inherit;
-}
+}*/
 
 /* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
 *  el margin: auto; para tenerlo centrado fácilmente ;)
@@ -37,9 +88,51 @@ main {
     margin: auto;
 }
 
+.sec1{
+    min-height: 100vh;
+    padding: 20px, 0;
+    text-align: center;
+    box-shadow: #0f0f0f;
+}
+
+.sec1 h2{
+        text-align: center;
+        font-size: 36px;
+    }
+.sec1 img{
+    width: 400px;
+    height: 400px;
+}
+p{
+    padding-bottom: 20px;
+}
+
+.btn{
+    text-decoration: none;
+    padding: 3px;
+  
+     }
+
+.btn1{
+    background: #af599e;
+    border-radius: 50px;
+    color: #fbfbfb;
+} 
+
+.sec2{
+    min-height: 100vh;
+    background-color: rgba(175, 89, 158, 00.3);
+}
+.sec2 h2 ul{
+    text-align: center;
+    font-size: 28px;
+    text-decoration: none;
+}
 img{
     border-radius: 50%;
 }
+
+
 /* Recomendaciones! 
 *  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
 *    "estilos generales". Una buena idea sería comenzar por el <body> ;)
