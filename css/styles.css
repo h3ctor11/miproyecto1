@@ -2,7 +2,7 @@
 
 /* Fonts */
 /* Importar aquí la font */
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 
 /* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
@@ -10,7 +10,6 @@
 */
 
 /* Reset */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -33,26 +32,27 @@ body{
     justify-content: space-between;
     align-items: center;
     height: 90px;
-    padding: 2px 5%;
-    top: 0;
-
+    padding: 20px 5%;
+    margin-top: 10px;
+   
 }
-.header .logo{
+.header img{
     cursor: pointer;
 }
 
-.header .logo img{
+.header  img{
     border-radius: 50px;
     height: 85px;
     width: 85px;
     transition: all 0.3s;
 }
-.header .logo :hover{
-    transform: scale(1.2); 
+.header :hover{
+    transform: scale(1.1); 
 }
 
 .header .nav-lista{
-    list-style: none;
+    list-style: none; 
+    box-shadow: 0, 3px, 10px, 5px, #5f5f5f;
 }
 
 .header .nav-lista li{
@@ -62,7 +62,7 @@ body{
 
 .header .nav-lista a{
     text-decoration: none;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     color: #0f0f0f;
 }
 
@@ -75,10 +75,10 @@ body{
 }
 
 /* Para que los enlaces hereden el color de texto y no tengan subrayado */
-/*a {
+a {
     text-decoration: none;
     color: inherit;
-}*/
+}
 
 /* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
 *  el margin: auto; para tenerlo centrado fácilmente ;)
@@ -92,19 +92,34 @@ main {
     min-height: 100vh;
     padding: 20px, 0;
     text-align: center;
-    box-shadow: #0f0f0f;
+    position: relative;
 }
 
-.sec1 h2{
-        text-align: center;
-        font-size: 36px;
-    }
-.sec1 img{
+.figure{
+    position: relative;
+    top: 5vh;
     width: 400px;
     height: 400px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.figure img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+.sec1 h1{
+        text-align: center;
+        font-size: 36px;
+        padding-top: 50px;
+        padding-bottom: 5px;
+    }
+
+
 p{
     padding-bottom: 20px;
+    line-height: 1,2;
 }
 
 .btn{
@@ -117,21 +132,50 @@ p{
     background: #af599e;
     border-radius: 50px;
     color: #fbfbfb;
+    padding: 10px;
 } 
 
 .sec2{
-    min-height: 100vh;
+    min-height: 30vh;
     background-color: rgba(175, 89, 158, 00.3);
+    border-radius: 10px;
 }
-.sec2 h2 ul{
+.sec2 h2{
     text-align: center;
-    font-size: 28px;
-    text-decoration: none;
-}
-img{
-    border-radius: 50%;
+    font-size: 28px;  
+    padding: 20px;
 }
 
+.sec2 p{
+    text-align: center;
+    padding: 10px;
+}
+
+.sec3 .lista li{
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+    width: 80px;
+    height: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.sec3 li img{
+    width: 40px;
+    height: 40px;
+}
+
+.footer{
+    background: #af599e;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.footer p{
+    padding-top: 10px;
+}
 
 /* Recomendaciones! 
 *  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero

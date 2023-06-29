@@ -12,54 +12,68 @@
 </head>
 
 <body>
-    <!-- La estructura básica y la vinculación con CSS estan listas. A codear! 💪  -->
-    <!-- En este archivo escriban su HTML -->
+
     <header class="header">
-        <div class="logo">
-            <img src="./img/logo hb1.jpg" alt="logo personal"> 
-        </div>
+
+        <a href="Inicio"> <img src="./img/logo hb1.jpg" alt="logo personal"> </a>
+
         <nav class="nav-lista">
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
-                <li> <a href="#contacto">Contacto</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="Inicio" class="sec1">
-            <img src="./img/pp.jpg" alt="foto de héctor">
+        <section id="inicio">
+            <figure class="figure">
+                <img src="./img/pp.jpg" alt="foto de héctor" class="perfil">
+            </figure>
 
-            <h2>Hola! Soy Héctor</h2>
 
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, suscipit sint assumenda magnam placeat
-                velit quam iste, aperiam mollitia blanditiis, veniam non? Quo, ab eaque ea temporibus tempore
-                accusantium aliquid pariatur repellat sint id doloremque veritatis illo facere quae accusamus doloribus?
-                Perspiciatis sunt aliquam fugiat. Explicabo, quasi omnis.
-            </p>
+            <article class="sec1">
+                <h1>Hola! Soy Héctor</h1>
 
-            <a href="./img/HÉCTOR BETANCOURT (2).pdf" class="btn btn1">Descargar cv</a>
+                <p>
+                    Estudiante de desarrollo wed, vivo en argentina, tambien soy contador, me gustan los deportes,
+                    cocinar y comer con amigos. padre de un niño de 4 años, me gusta los desfios y este curso me ha
+                    planteado muchos retos, ha sido una experiencia maravillosa y todavia queda mucho por delante que
+                    aprender y mejorar. me gusta la filosofia de aprender haciendo.
+
+                </p>
+
+                <a href="./img/HÉCTOR BETANCOURT (2).pdf" class="btn btn1">Descargar cv</a>
+            </article>
+
         </section>
 
-        <section id="Contacto" class="sec2">
-            <h2>Hablemos!</h2>
+        <section id="Contacto">
+            <article class="sec2">
 
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis consequatur numquam, soluta natus cum
-                ut asperiores repellat exercitationem sint officia molestias quibusdam fugit esse recusandae magnam
-                nulla est fuga non!
-            </p>
-            <ul>
-                <li><img src="./img/mail.png" alt="email"></li>
-                <li><img src="./img/github.png" alt="github"></li>
-                <li><img src="./img/linkedin.png" alt="linkedin"></li>
-            </ul>
+                <h2>Hablemos!</h2>
+
+                <p>
+                    En esta sección de dejare algunos link para poder seguir en contacto e información, en caso de
+                    querer algun tipo de asesoria o contratación por algun servicio, saludos!
+                </p>
+
+            </article>
+            <article class="sec3">
+                <ul class="lista">
+                    <li><a href="#email"><img src="./img/mail.png" alt="email"></a></li>
+                    <li><a href="https://github.com/h3ctor11/miproyecto1.git" target="_blank"></a><img
+                            src="./img/github.png" alt="github"></li>
+                    <li><img src="./img/linkedin.png" alt="linkedin"></li>
+                </ul>
+            </article>
+
         </section>
     </main>
 
     <footer class="footer">
         <p>Código latam creado por héctor, suerte y gaceta hípica</p>
+
     </footer>
 </body>
 
